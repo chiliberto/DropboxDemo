@@ -12,6 +12,10 @@
 		20B910641BA939B0006364D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B910621BA939B0006364D8 /* Main.storyboard */; };
 		20B910661BA939B0006364D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B910651BA939B0006364D8 /* Assets.xcassets */; };
 		20B910691BA939B0006364D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B910671BA939B0006364D8 /* LaunchScreen.storyboard */; };
+		20B910731BA948E0006364D8 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910721BA948E0006364D8 /* CreateViewController.swift */; };
+		20B910751BA94915006364D8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910741BA94915006364D8 /* SignInViewController.swift */; };
+		20B910771BA9B659006364D8 /* CreateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910761BA9B659006364D8 /* CreateFormViewController.swift */; };
+		20B910791BA9B747006364D8 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910781BA9B747006364D8 /* SignInFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		20B910651BA939B0006364D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B910681BA939B0006364D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B9106A1BA939B0006364D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B910721BA948E0006364D8 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		20B910741BA94915006364D8 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		20B910761BA9B659006364D8 /* CreateFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateFormViewController.swift; path = ../CreateFormViewController.swift; sourceTree = "<group>"; };
+		20B910781BA9B747006364D8 /* SignInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInFormViewController.swift; path = ../SignInFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,13 @@
 		20B9105D1BA939B0006364D8 /* DropboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20B910781BA9B747006364D8 /* SignInFormViewController.swift */,
+				20B910761BA9B659006364D8 /* CreateFormViewController.swift */,
 				20B9105E1BA939B0006364D8 /* AppDelegate.swift */,
 				20B910601BA939B0006364D8 /* ViewController.swift */,
 				20B910621BA939B0006364D8 /* Main.storyboard */,
+				20B910721BA948E0006364D8 /* CreateViewController.swift */,
+				20B910741BA94915006364D8 /* SignInViewController.swift */,
 				20B910651BA939B0006364D8 /* Assets.xcassets */,
 				20B910671BA939B0006364D8 /* LaunchScreen.storyboard */,
 				20B9106A1BA939B0006364D8 /* Info.plist */,
@@ -135,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B910751BA94915006364D8 /* SignInViewController.swift in Sources */,
+				20B910771BA9B659006364D8 /* CreateFormViewController.swift in Sources */,
+				20B910791BA9B747006364D8 /* SignInFormViewController.swift in Sources */,
+				20B910731BA948E0006364D8 /* CreateViewController.swift in Sources */,
 				20B910611BA939B0006364D8 /* ViewController.swift in Sources */,
 				20B9105F1BA939B0006364D8 /* AppDelegate.swift in Sources */,
 			);
