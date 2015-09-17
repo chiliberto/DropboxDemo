@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205663B41BAA45A7002FB3F4 /* NewSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205663B31BAA45A7002FB3F4 /* NewSettingsViewController.swift */; };
+		205663B61BAA46A3002FB3F4 /* ExistingSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205663B51BAA46A3002FB3F4 /* ExistingSettingsViewController.swift */; };
 		20B9105F1BA939B0006364D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9105E1BA939B0006364D8 /* AppDelegate.swift */; };
 		20B910611BA939B0006364D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910601BA939B0006364D8 /* ViewController.swift */; };
 		20B910641BA939B0006364D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B910621BA939B0006364D8 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		205663B31BAA45A7002FB3F4 /* NewSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSettingsViewController.swift; sourceTree = "<group>"; };
+		205663B51BAA46A3002FB3F4 /* ExistingSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingSettingsViewController.swift; sourceTree = "<group>"; };
 		20B9105B1BA939B0006364D8 /* DropboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B9105E1BA939B0006364D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B910601BA939B0006364D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				20B910651BA939B0006364D8 /* Assets.xcassets */,
 				20B910671BA939B0006364D8 /* LaunchScreen.storyboard */,
 				20B9106A1BA939B0006364D8 /* Info.plist */,
+				205663B51BAA46A3002FB3F4 /* ExistingSettingsViewController.swift */,
+				205663B31BAA45A7002FB3F4 /* NewSettingsViewController.swift */,
 			);
 			path = DropboxDemo;
 			sourceTree = "<group>";
@@ -149,8 +155,10 @@
 			files = (
 				20B910751BA94915006364D8 /* SignInViewController.swift in Sources */,
 				20B910771BA9B659006364D8 /* CreateFormViewController.swift in Sources */,
+				205663B61BAA46A3002FB3F4 /* ExistingSettingsViewController.swift in Sources */,
 				20B910791BA9B747006364D8 /* SignInFormViewController.swift in Sources */,
 				20B910731BA948E0006364D8 /* CreateViewController.swift in Sources */,
+				205663B41BAA45A7002FB3F4 /* NewSettingsViewController.swift in Sources */,
 				20B910611BA939B0006364D8 /* ViewController.swift in Sources */,
 				20B9105F1BA939B0006364D8 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +308,7 @@
 				20B9106F1BA939B0006364D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
