@@ -15,7 +15,7 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        performSegueWithIdentifier("signInSegue", sender: self)
+        // performSegueWithIdentifier("signInSegue", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

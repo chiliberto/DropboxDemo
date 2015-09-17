@@ -1,5 +1,5 @@
 //
-//  CreateFormViewController.swift
+//  TermsViewController.swift
 //  DropboxDemo
 //
 //  Created by Gilbert Guerrero on 9/16/15.
@@ -8,16 +8,12 @@
 
 import UIKit
 
-class CreateFormViewController: UIViewController {
+class TermsViewController: UIViewController {
 
-    @IBOutlet weak var termsView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        termsView.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,23 +21,13 @@ class CreateFormViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onBackButton(sender: AnyObject) {
-        
-        navigationController!.popViewControllerAnimated(true)
-    
-    }
 
-    @IBAction func onCreateButton(sender: AnyObject) {
+    @IBAction func onBackButton(sender: AnyObject) {
+
+        //navigationController!.popViewControllerAnimated(true)
         
-        termsView.hidden = false
-        view.endEditing(true)
-        
-    }
-    
-    @IBAction func onDismissActionSheet(sender: AnyObject) {
-        
-        termsView.hidden = true
-    
+        self.dismissViewControllerAnimated(true, completion: {})
+
     }
     
     /*
