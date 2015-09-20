@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="x3X-F9-vM0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Eiv-Np-Uew">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
@@ -169,35 +169,57 @@
                                     <action selector="onBackButton:" destination="Eiv-Np-Uew" eventType="touchUpInside" id="bsc-oD-rXf"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="sbU-fb-eoB">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="sbU-fb-eoB">
                                 <rect key="frame" x="116" y="87" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="onNameField:" destination="Eiv-Np-Uew" eventType="editingDidEndOnExit" id="UrM-lB-MFF"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="MUP-ht-rxc">
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="MUP-ht-rxc">
                                 <rect key="frame" x="116" y="130" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="onLastNameField:" destination="Eiv-Np-Uew" eventType="editingDidEndOnExit" id="iBY-lu-qHC"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" id="lqH-22-VvY">
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" id="lqH-22-VvY">
                                 <rect key="frame" x="116" y="175" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="onEmailField:" destination="Eiv-Np-Uew" eventType="editingDidEndOnExit" id="8Ij-uc-6Ev"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" minimumFontSize="17" id="AQs-j2-4fD">
+                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" minimumFontSize="17" id="AQs-j2-4fD">
                                 <rect key="frame" x="116" y="218" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="onPasswordBegin:" destination="Eiv-Np-Uew" eventType="editingDidBegin" id="VPX-0I-LYK"/>
+                                    <action selector="onPasswordChange:" destination="Eiv-Np-Uew" eventType="editingChanged" id="azs-3J-j46"/>
+                                    <action selector="onPasswordField:" destination="Eiv-Np-Uew" eventType="editingDidEndOnExit" id="ko8-uC-CIo"/>
+                                </connections>
                             </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create1" id="wZ5-gW-Wju">
+                                <rect key="frame" x="0.0" y="253" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create4" id="Twq-6J-HUn">
+                                <rect key="frame" x="0.0" y="249" width="320" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="tqp-wI-ZXR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,6 +262,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qc5-pd-qVu"/>
                     <connections>
+                        <outlet property="EmailField" destination="lqH-22-VvY" id="aWv-Qb-3Ra"/>
+                        <outlet property="FirstNameField" destination="sbU-fb-eoB" id="suh-ED-gk1"/>
+                        <outlet property="LastNameField" destination="MUP-ht-rxc" id="ilR-Qh-6ml"/>
+                        <outlet property="PasswordField" destination="AQs-j2-4fD" id="gog-8W-iOk"/>
+                        <outlet property="PasswordGreat" destination="Twq-6J-HUn" id="aaG-h1-LGs"/>
+                        <outlet property="PasswordWeak" destination="wZ5-gW-Wju" id="Zvt-l7-vXp"/>
                         <outlet property="termsView" destination="tqp-wI-ZXR" id="ecw-Zt-Bk5"/>
                     </connections>
                 </viewController>
@@ -814,6 +842,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="create1" width="320" height="568"/>
+        <image name="create4" width="320" height="568"/>
         <image name="create5" width="320" height="568"/>
         <image name="create_account" width="320" height="568"/>
         <image name="empty_favorites" width="320" height="454"/>

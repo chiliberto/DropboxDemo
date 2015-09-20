@@ -11,6 +11,13 @@ import UIKit
 class CreateFormViewController: UIViewController {
 
     @IBOutlet weak var termsView: UIView!
+    @IBOutlet weak var PasswordWeak: UIImageView!
+    @IBOutlet weak var PasswordGreat: UIImageView!
+    
+    @IBOutlet weak var FirstNameField: UITextField!
+    @IBOutlet weak var LastNameField: UITextField!
+    @IBOutlet weak var EmailField: UITextField!
+    @IBOutlet weak var PasswordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +25,8 @@ class CreateFormViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         termsView.hidden = true
+        PasswordWeak.hidden = true
+        PasswordGreat.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +50,45 @@ class CreateFormViewController: UIViewController {
     @IBAction func onDismissActionSheet(sender: AnyObject) {
         
         termsView.hidden = true
+    
+    }
+    
+    @IBAction func onNameField(sender: AnyObject) {
+        
+        self.LastNameField.becomeFirstResponder()
+            
+    }
+    
+
+    @IBAction func onLastNameField(sender: AnyObject) {
+
+        self.EmailField.becomeFirstResponder()
+    
+    }
+    
+    
+    @IBAction func onEmailField(sender: AnyObject) {
+        
+        self.PasswordField.becomeFirstResponder()
+
+    }
+    
+    @IBAction func onPasswordField(sender: AnyObject) {
+
+        termsView.hidden = false
+        view.endEditing(true)
+
+    }
+    
+    @IBAction func onPasswordBegin(sender: AnyObject) {
+        
+        PasswordWeak.hidden = false
+        
+    }
+    
+    @IBAction func onPasswordChange(sender: AnyObject) {
+
+        PasswordGreat.hidden = false
     
     }
     
