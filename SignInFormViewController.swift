@@ -9,11 +9,18 @@
 import UIKit
 
 class SignInFormViewController: UIViewController {
+    
+    @IBOutlet weak var EmailField: UITextField!
+    @IBOutlet weak var PasswordField: UITextField!
 
+    @IBOutlet weak var ForgotPasswordView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        ForgotPasswordView.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +33,33 @@ class SignInFormViewController: UIViewController {
         navigationController!.popViewControllerAnimated(true)
 
     }
+    
+    @IBAction func ShowForgotPassword(sender: AnyObject) {
 
+        ForgotPasswordView.hidden = false
+
+    }
+    
+    @IBAction func onDismissForgotPassword(sender: AnyObject) {
+        
+        ForgotPasswordView.hidden = true
+        
+    }
+    
+    
+    @IBAction func onEmailField(sender: AnyObject) {
+        
+        self.PasswordField.becomeFirstResponder()
+        
+    }
+
+    @IBAction func onPasswordField(sender: AnyObject) {
+
+        view.endEditing(true)
+
+        performSegueWithIdentifier("signInSegue", sender: self)
+
+    }
     /*
     // MARK: - Navigation
 
