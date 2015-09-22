@@ -14,6 +14,8 @@ class CreateFormViewController: UIViewController {
     @IBOutlet weak var PasswordWeak: UIImageView!
     @IBOutlet weak var PasswordGreat: UIImageView!
     
+    @IBOutlet weak var CreateButton: UIButton!
+    
     @IBOutlet weak var FirstNameField: UITextField!
     @IBOutlet weak var LastNameField: UITextField!
     @IBOutlet weak var EmailField: UITextField!
@@ -27,6 +29,7 @@ class CreateFormViewController: UIViewController {
         termsView.hidden = true
         PasswordWeak.hidden = true
         PasswordGreat.hidden = true
+        CreateButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,6 +92,7 @@ class CreateFormViewController: UIViewController {
     @IBAction func onPasswordChange(sender: AnyObject) {
 
         PasswordGreat.hidden = false
+        CreateButton.hidden = false
     
     }
     

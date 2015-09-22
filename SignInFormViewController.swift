@@ -15,12 +15,16 @@ class SignInFormViewController: UIViewController {
 
     @IBOutlet weak var ForgotPasswordView: UIView!
     
+    @IBOutlet weak var SignInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         ForgotPasswordView.hidden = true
+        SignInButton.hidden = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +64,12 @@ class SignInFormViewController: UIViewController {
         performSegueWithIdentifier("signInSegue", sender: self)
 
     }
+    @IBAction func onPasswordChanged(sender: AnyObject) {
+    
+        SignInButton.hidden = false
+        
+    }
+    
     /*
     // MARK: - Navigation
 

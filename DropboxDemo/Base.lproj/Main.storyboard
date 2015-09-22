@@ -113,6 +113,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logged_out" id="IEz-4h-o5Z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YgU-nS-9um">
                                 <rect key="frame" x="8" y="430" width="304" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -127,10 +131,6 @@
                                     <segue destination="Eiv-Np-Uew" kind="push" identifier="createSegue" id="Z6a-WM-g0e"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logged_out" id="IEz-4h-o5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -153,8 +153,9 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JF4-eO-hz2">
-                                <rect key="frame" x="258" y="27" width="53" height="30"/>
+                                <rect key="frame" x="257" y="28" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
@@ -262,6 +263,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qc5-pd-qVu"/>
                     <connections>
+                        <outlet property="CreateButton" destination="JF4-eO-hz2" id="TfQ-xd-H1J"/>
                         <outlet property="EmailField" destination="lqH-22-VvY" id="aWv-Qb-3Ra"/>
                         <outlet property="FirstNameField" destination="sbU-fb-eoB" id="suh-ED-gk1"/>
                         <outlet property="LastNameField" destination="MUP-ht-rxc" id="ilR-Qh-6ml"/>
@@ -361,13 +363,15 @@
                                 <connections>
                                     <action selector="onPasswordBegin:" destination="Eiv-Np-Uew" eventType="editingDidBegin" id="9wE-xZ-dIH"/>
                                     <action selector="onPasswordChange:" destination="Eiv-Np-Uew" eventType="editingChanged" id="qZN-HL-Ozo"/>
+                                    <action selector="onPasswordChanged:" destination="Rqk-km-IIl" eventType="editingChanged" id="UfO-Lf-IAL"/>
                                     <action selector="onPasswordField:" destination="Eiv-Np-Uew" eventType="editingDidEndOnExit" id="eMj-me-18f"/>
                                     <action selector="onPasswordField:" destination="Rqk-km-IIl" eventType="editingDidEndOnExit" id="sV7-dX-YX4"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zp5-VD-KmI">
-                                <rect key="frame" x="257" y="27" width="53" height="32"/>
+                                <rect key="frame" x="258" y="27" width="53" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
@@ -420,6 +424,7 @@
                         <outlet property="EmailField" destination="Z0N-bS-j8Q" id="pkd-ml-lZ9"/>
                         <outlet property="ForgotPasswordView" destination="t0f-ER-IkU" id="vI1-uW-Mev"/>
                         <outlet property="PasswordField" destination="b0r-TH-6yX" id="WBj-xf-22l"/>
+                        <outlet property="SignInButton" destination="Zp5-VD-KmI" id="Z4L-j9-6eJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qn4-mQ-fvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -666,7 +671,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zFS-wl-s1d">
-                                        <rect key="frame" x="0.0" y="755" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="687" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="Y0P-qH-sPc" kind="modal" id="VnF-08-Ero"/>
@@ -752,7 +757,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wei-U6-4MG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3162" y="1791"/>
+            <point key="canvasLocation" x="3148" y="1791"/>
         </scene>
         <!--Files-->
         <scene sceneID="RCg-DD-Pb4">
@@ -870,7 +875,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="q0b-bp-7Tr">
-                                <rect key="frame" x="0.0" y="65" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="settings" id="5kk-Wx-UYh">
@@ -878,7 +883,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BTY-Ym-8qN">
-                                        <rect key="frame" x="0.0" y="690" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="690" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="Y0P-qH-sPc" kind="modal" id="EHu-Vp-uKm"/>
@@ -925,8 +930,8 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eMM-RA-JFr"/>
         <segue reference="qaN-Yw-vSW"/>
         <segue reference="csM-5d-zaD"/>
-        <segue reference="Ldg-li-7Ja"/>
     </inferredMetricsTieBreakers>
 </document>
