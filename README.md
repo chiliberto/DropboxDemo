@@ -27,7 +27,7 @@ Not completed
  
 Walkthrough of all user stories:
 
-![Video Walkthrough](DropboxDemo.gif)
+![Video Walkthrough](DropboxDemo2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
