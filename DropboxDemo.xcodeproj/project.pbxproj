@@ -19,6 +19,7 @@
 		20B910751BA94915006364D8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910741BA94915006364D8 /* SignInViewController.swift */; };
 		20B910771BA9B659006364D8 /* CreateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910761BA9B659006364D8 /* CreateFormViewController.swift */; };
 		20B910791BA9B747006364D8 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B910781BA9B747006364D8 /* SignInFormViewController.swift */; };
+		20BDB2061BB0D62E008020F5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BDB2051BB0D62E008020F5 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		20B910741BA94915006364D8 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
 		20B910761BA9B659006364D8 /* CreateFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateFormViewController.swift; path = ../CreateFormViewController.swift; sourceTree = "<group>"; };
 		20B910781BA9B747006364D8 /* SignInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInFormViewController.swift; path = ../SignInFormViewController.swift; sourceTree = "<group>"; };
+		20BDB2051BB0D62E008020F5 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = ../PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		20B9105D1BA939B0006364D8 /* DropboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20BDB2051BB0D62E008020F5 /* PageViewController.swift */,
 				20B910781BA9B747006364D8 /* SignInFormViewController.swift */,
 				20B910761BA9B659006364D8 /* CreateFormViewController.swift */,
 				20B9105E1BA939B0006364D8 /* AppDelegate.swift */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B910751BA94915006364D8 /* SignInViewController.swift in Sources */,
+				20BDB2061BB0D62E008020F5 /* PageViewController.swift in Sources */,
 				20B910771BA9B659006364D8 /* CreateFormViewController.swift in Sources */,
 				205663B61BAA46A3002FB3F4 /* ExistingSettingsViewController.swift in Sources */,
 				20B910791BA9B747006364D8 /* SignInFormViewController.swift in Sources */,
